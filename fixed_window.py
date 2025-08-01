@@ -34,3 +34,5 @@ if __name__ == "__main__":
     )
   except KeyboardInterrupt:
     print("Stopped by user.")
+  except requests.exceptions.RequestException as e:
+    print(f"Request failed: {e}")
